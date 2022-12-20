@@ -1,0 +1,22 @@
+<form action="/updatedata" method="post">
+    <input type="hidden" name="editId" value="<%= editRecord.id %>">
+    <table border="1">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" value="<%= editRecord.name %>"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email" value="<%= editRecord.email %>"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="text" name="phone" value="<%= editRecord.phone %>"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</form>
